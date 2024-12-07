@@ -1,0 +1,45 @@
+To encrypt a file with Blowfish using OpenSSL and then decrypt it, follow these steps:
+1. Encrypt the File with Blowfish:
+
+Use the openssl enc command with the bf cipher (Blowfish):
+
+bash
+
+openssl enc -bf -in myfile.txt -out encrypted_blowfish.bin -pass pass:yourpassword -base64
+
+This command does the following:
+
+    -bf: Specifies the Blowfish cipher.
+    -in myfile.txt: The input file (myfile.txt) that you want to encrypt.
+    -out encrypted_blowfish.bin: The output file that will contain the encrypted data.
+    -pass pass:yourpassword: The password used for encryption (replace yourpassword with your desired password).
+    -base64: Ensures the output is base64-encoded, making it easier to handle or view.
+
+2. Decrypt the File:
+
+To decrypt the file encrypted with Blowfish, run:
+
+bash
+
+openssl enc -d -bf -in encrypted_blowfish.bin -out decrypted_blowfish.txt -pass pass:yourpassword -base64
+
+This command:
+
+    -d: Specifies decryption mode.
+    -bf: Uses the Blowfish cipher for decryption.
+    -in encrypted_blowfish.bin: The encrypted file.
+    -out decrypted_blowfish.txt: The output file that will contain the decrypted data.
+    -pass pass:yourpassword: The same password used during encryption.
+    -base64: Decodes the base64-encoded content.
+
+Example:
+
+bash
+
+# Encrypt with Blowfish
+openssl enc -bf -in myfile.txt -out encrypted_blowfish.bin -pass pass:napier -base64
+
+# Decrypt with Blowfish
+openssl enc -d -bf -in encrypted_blowfish.bin -out decrypted_blowfish.txt -pass pass:napier -base64
+
+Ensure that you use the same password and encryption options (like base64 encoding) when decrypting t

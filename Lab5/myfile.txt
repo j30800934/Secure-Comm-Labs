@@ -1,0 +1,7 @@
+4. Hiew (Hacker's View):
+
+hiew is another popular command-line hex editor, though it’s not available by default in many distributions, and you may need to compile it or install it from an external source.
+
+All of these options are terminal-based, providing you the power to edit files in a hex format without any graphical interface.
+
+Let me know if you'd like help with one of these tools or anything else!
