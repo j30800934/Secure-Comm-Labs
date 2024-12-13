@@ -34,3 +34,5 @@ ciphertext = "febcbe3a3414a730b125931dccf912d2239f3e969c4334d95ed0ec86f6449ad8"
 
 print(decrypt_flag(shared_secret, iv, ciphertext))
 # crypto{3ff1c1ent_k3y_3xch4ng3}
+
+#  This script performs elliptic curve cryptography (ECC) on a curve defined by a=497a=497, b=1768b=1768, and p=9739p=9739 to calculate a shared secret using a point QQ. It then uses this shared secret to derive an AES encryption key via SHA-1 hashing. The script decrypts a ciphertext that has been encrypted with AES in CBC mode, using the shared secret-derived key and a provided initialization vector (IV). If the ciphertext is padded using PKCS7, the padding is removed, and the decrypted flag is printed.

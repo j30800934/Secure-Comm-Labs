@@ -49,3 +49,7 @@ def sub_bytes(s, sbox=s_box):
 print(sub_bytes(state, sbox=inv_s_box))
 
 # crypto{l1n34rly}
+
+# This implementation defines the sub_bytes function that applies the SubBytes transformation in AES, where each byte in the state matrix is substituted using a given S-Box. The inv_s_box (inverse S-Box) is passed to sub_bytes to perform the inverse substitution, effectively reversing the AES SubBytes step.
+
+# For the provided state, the transformation reveals the plaintext crypto{l1n34rly}.

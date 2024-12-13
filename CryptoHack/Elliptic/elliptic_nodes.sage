@@ -42,3 +42,6 @@ v = (Q_[1] + t*Q_[0])/(Q_[1] - t*Q_[0]) % p
 print(long_to_bytes(discrete_log(v, u)))
 
 ## crypto{s1ngul4r_s1mplif1c4t1on}
+
+
+# This SageMath script demonstrates the use of elliptic curve parameters to calculate values for a singular curve, which potentially leaks cryptographic information. It defines the curve and computes the elliptic curve parameters \(a\) and \(b\) based on two given points. The script shows how singularity can be identified by verifying the condition \(4a^3 + 27b^2 = 0\). It then proceeds to perform a discrete logarithm calculation on the curve, leveraging affine shifts and properties of the singular curve, ultimately revealing the flag using the discrete logarithm.

@@ -98,3 +98,5 @@ print(decrypt_flag(s,iv,enc))
 
 
 ## crypto{n07_3ph3m3r4l_3n0u6h}
+
+# This script connects to a remote server and intercepts Diffie-Hellman parameters and an AES-encrypted message. It then constructs a fake prime for the Diffie-Hellman calculation, calculates the shared secret using the discrete logarithm of a received value, and uses it to derive an AES key. The script proceeds to decrypt the flag using the derived key and AES in CBC mode. The decrypted plaintext is returned and printed.

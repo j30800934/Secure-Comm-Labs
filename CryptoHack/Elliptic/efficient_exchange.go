@@ -175,3 +175,6 @@ func main() {
 	}
 	fmt.Println(decrypt_flag(nQ.x, payload["iv"], payload["encrypted_flag"]))
 }
+
+
+// This Go script implements elliptic curve cryptography (ECC) operations, including point addition and scalar multiplication on a curve defined by parameters \(a = 497\), \(b = 1768\), and \(p = 9739\). It also performs AES decryption using a shared secret derived from the elliptic curve and a provided IV and ciphertext, following the PKCS7 padding scheme. The script verifies that a point \(Q\) lies on the curve and calculates \(nQ\) (scalar multiplication), then decrypts an encrypted flag using AES with the derived key. The decrypted flag is returned after removing any padding.

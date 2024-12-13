@@ -21,3 +21,5 @@ for i in new_matrix:
     print(chr(i),end="")
     
 # crypto{inmatrix}
+
+# This script converts a 4x4 matrix of integer values into a 16-byte array using the matrix2bytes function. It then prints the ASCII characters of the resulting array, which reveals the flag crypto{inmatrix}. The bytes2matrix function is defined but unused here, and the main focus is on the conversion and printing process. The output is the flag in readable text form.

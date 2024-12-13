@@ -134,3 +134,5 @@ func main() {
 	}
 	fmt.Println(S)
 }
+
+// The Python script defines an elliptic curve over GF(9739) with points P and Q, performs point addition to calculate S, and verifies if S lies on the curve. The Go code implements elliptic curve point addition and scalar multiplication for a curve defined over a large prime field, checks if points are on the curve, and lifts x-coordinates to y-coordinates using modular arithmetic. Both scripts work with elliptic curve cryptographic operations but differ in language and implementation details.

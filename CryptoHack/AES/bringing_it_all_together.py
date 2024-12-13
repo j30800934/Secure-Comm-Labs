@@ -1,4 +1,3 @@
-# since i trust them enought that i believe their implementations do work, hence i must cheat
 
 from Cryptodome.Cipher import AES 
 
@@ -148,3 +147,5 @@ for a in c:
     print(chr(a),end="")
 
 # crypto{MYAES128}
+
+# The code implements AES decryption manually, including functions for key expansion, byte-matrix conversions, inverse transformations (SubBytes, ShiftRows, MixColumns), and AddRoundKey. It starts by generating round keys, applies inverse transformations to reverse the encryption process over multiple rounds, and reconstructs plaintext from the final state matrix. The decryption reveals the plaintext crypto{MYAES128}.

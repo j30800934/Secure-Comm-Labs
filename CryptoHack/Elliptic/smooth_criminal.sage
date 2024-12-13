@@ -46,3 +46,6 @@ def decrypt_flag(shared_secret: int, iv: str, ciphertext: str):
 print(decrypt_flag(shared_secret,iv,encrypted_flag))
 
 # crypto{n07_4ll_curv3s_4r3_s4f3_curv3s}
+
+
+# This script sets up an elliptic curve and uses it to derive a shared secret between two parties, then uses this shared secret to decrypt a given AES-encrypted flag. The shared secret is computed using discrete logarithms, and AES decryption is performed in CBC mode. The result is the flag crypto{n07_4ll_curv3s_4r3_s4f3_curv3s}.

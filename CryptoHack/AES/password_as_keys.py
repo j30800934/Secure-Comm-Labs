@@ -22,3 +22,7 @@ for key in wordlist:
         pass
 
 # crypto{k3y5__r__n07__p455w0rdz?}
+
+
+
+# This script attempts to decrypt a given ciphertext using AES in ECB mode with keys derived from a wordlist. It fetches a list of words from a remote URL and hashes each word using MD5 to generate a key for AES decryption. The script then tries to decrypt the ciphertext with each generated key, printing any successfully decrypted plaintext as a potential flag. The decrypted flag is revealed as crypto{k3y5__r__n07__p455w0rdz?}.

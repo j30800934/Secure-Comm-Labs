@@ -52,3 +52,6 @@ def decrypt_flag(shared_secret: int, iv: str, ciphertext: str):
 print(decrypt_flag(1,iv,encrypted_flag))
 
 # crypto{n1c3_0n3_m4ll0ry!!!!!!!!}
+
+
+# This script connects to a remote server, retrieves Diffie-Hellman parameters (p, g, A, B), and exchanges values with the server. It then calculates the shared secret using a predefined value for g, derives an AES key via SHA-1 hashing, and decrypts the encrypted flag using AES in CBC mode. PKCS7 padding is handled to properly decode the decrypted message before printing the flag.

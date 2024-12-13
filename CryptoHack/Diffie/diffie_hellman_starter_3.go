@@ -12,3 +12,8 @@ func main() {
 
 	fmt.Println(g.Exp(g, a, p))
 }
+
+
+
+
+// This Go program calculates the modular exponentiation of g^a mod p, where g is 2, a is a large number, and p is a large prime. The program uses the Exp function from the math/big package to efficiently compute the result. The function Exp(g, a, p) computes g raised to the power of a modulo p. This is commonly used in cryptographic protocols such as Diffie-Hellman key exchange. The result is printed to the console.

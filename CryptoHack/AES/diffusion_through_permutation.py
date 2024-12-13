@@ -61,3 +61,5 @@ for i in a:
     print(chr(i),end="")
 
 # crypto{d1ffUs3R}
+
+# This script implements AES operations ShiftRows and MixColumns with their inverses. ShiftRows cyclically shifts rows, while MixColumns transforms columns for diffusion using Galois Field arithmetic. The inverse functions reverse these operations. Finally, the state matrix is converted to a byte array to reveal the message: crypto{d1ffUs3R}.

@@ -13,3 +13,6 @@ func main() {
 
 	fmt.Println(A.Exp(A, b, p))
 }
+
+
+// This Go program calculates the modular exponentiation of `A^b mod p`, where `A` and `b` are large integers, and `p` is a large prime. It uses the `Exp` function from the `math/big` package to efficiently compute the result, specifically `A` raised to the power of `b` modulo `p`. The `Exp(A, b, p)` function efficiently handles the large numbers involved and computes the result, which is then printed. This computation is commonly used in cryptographic protocols such as Diffie-Hellman key exchange.

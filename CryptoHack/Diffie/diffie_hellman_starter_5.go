@@ -57,3 +57,6 @@ func main() {
 
 	fmt.Println(decrypt_flag(k, payload["iv"], payload["encrypted_flag"]))
 }
+
+
+// This Go program implements an AES decryption mechanism using a shared secret derived from Diffie-Hellman parameters. It first computes the shared secret `k` by raising `A` to the power of `b` modulo `p`. The shared secret is then used to generate a 16-byte AES key via SHA-1 hashing. The program decrypts a given ciphertext (representing a flag) using AES in CBC mode, checks for PKCS7 padding, and removes it if valid. Finally, the decrypted message (flag) is printed.

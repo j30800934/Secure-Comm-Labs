@@ -67,3 +67,6 @@ def decrypt_flag(shared_secret: int, iv: str, ciphertext: str):
 print(decrypt_flag(s,iv,encrypted_flag))
 
 # crypto{d0wn6r4d35_4r3_d4n63r0u5}
+
+# This SageMath script solves a cryptographic challenge involving Diffie-Hellman key exchange and AES decryption. It starts by parsing Diffie-Hellman parameters (prime p, generator g, and public keys A and B) from a remote server's response. Using Sage's discrete_log function, it computes the private key a from Alice's public key A and base g. The script then calculates the shared secret s as B^a mod p, which is used to derive the AES decryption key via SHA-1. Finally, it decrypts the encrypted flag using AES in CBC mode with PKCS7 padding and unpadding, returning the decrypted flag.
+

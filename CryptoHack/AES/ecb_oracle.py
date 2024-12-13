@@ -35,4 +35,6 @@ print(flag)
 
 
 
+# The script performs a byte-by-byte decryption attack on an AES ECB oracle. It calculates the flag's length using ciphertext size changes. By aligning the flag at the end of a block with padding, it iterates over possible characters, matching the oracle's ciphertext to deduce each byte. The process stops upon finding } in the flag. This exploits ECB's deterministic block encryption.
+
 

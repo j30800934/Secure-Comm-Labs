@@ -52,3 +52,6 @@ def decrypt_flag(shared_secret: int, iv: str, ciphertext: str):
     return pkcs7_unpad(plaintext).decode('ascii')
 
 print(decrypt_flag(0,iv,enc))
+
+
+# This script connects to a remote server and intercepts parameters related to Diffie-Hellman key exchange (p, g, A, B). It receives an AES-encrypted message, then calculates the shared secret and uses it to derive an AES key via SHA-1. The script decrypts the flag using AES in CBC mode and removes PKCS7 padding. Finally, the decrypted flag is printed.

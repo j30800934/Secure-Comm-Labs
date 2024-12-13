@@ -31,3 +31,6 @@ ciphertext = "39c99bf2f0c14678d6a5416faef954b5893c316fc3c48622ba1fd6a9fe85f3dc72
 print(decrypt_flag(shared_secret, iv, ciphertext))
 
 # crypto{sh4r1ng_s3cret5_w1th_fr13nd5}
+
+
+# This script performs AES decryption using a shared secret derived from Diffie-Hellman key exchange. It uses the `shared_secret`, initialization vector (`iv`), and ciphertext to decrypt the flag. The shared secret is first calculated using `A` and `b` with modular exponentiation, then hashed with SHA-1 to generate a 16-byte AES key. The ciphertext is decrypted in CBC mode, and the PKCS7 padding is removed. The decrypted flag is printed at the end.

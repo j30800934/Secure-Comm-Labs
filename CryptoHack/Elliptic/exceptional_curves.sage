@@ -64,3 +64,5 @@ print(decrypt_flag(shared_secret,iv,encrypted_flag))
 
 # crypto{H3ns3l_lift3d_my_fl4g!}
 
+# This Python script utilizes elliptic curve cryptography and the Smart's attack to extract the shared secret from elliptic curve points. It first defines an elliptic curve and generator, calculates a discrete logarithm using the Smart attack on two points, and uses the result to derive a shared secret. This shared secret is then hashed to generate an AES key, which is used to decrypt an encrypted flag. The flag is then printed after successful decryption.
+

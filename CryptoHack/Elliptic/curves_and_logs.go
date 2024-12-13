@@ -128,3 +128,6 @@ func main() {
 	PQ := E.Mul(Q, n)
 	fmt.Printf("%x\n", sha1.Sum([]byte(PQ.x.String())))
 }
+
+
+// # This Go script defines elliptic curve operations, including point addition and multiplication, for a specific curve \( E \) with parameters \( a \), \( b \), and \( p \). It includes methods to verify if a point lies on the curve, add points, and multiply points by a scalar. The main function sets up a curve and a point, then performs scalar multiplication on the point, and finally hashes the x-coordinate of the resulting point using SHA-1.

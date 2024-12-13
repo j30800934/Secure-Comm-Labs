@@ -60,3 +60,5 @@ encrypted_flag = "b503bf04df71cfbd3f464aec2083e9b79c825803a4d4a43697889ad29eb754
 print(decrypt(share_secret,bytes.fromhex(encrypted_flag),bytes.fromhex(iv)))
 
 ## crypto{d0nt_l3t_n_b3_t00_sm4ll}
+
+# This script implements elliptic curve cryptography and solves the discrete logarithm problem (DLP) using the Baby-step Giant-step (BSGS) algorithm. It first sets up an elliptic curve and defines points for the curve, then uses the BSGS algorithm to solve the DLP and determine the secret scalar \( n \). The resulting scalar is used to generate a shared secret, which is then hashed to derive an AES key for decryption. Finally, the script decrypts an encrypted flag using the shared secret and prints the flag.

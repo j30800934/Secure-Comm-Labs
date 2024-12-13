@@ -11,3 +11,6 @@ func main() {
 	bytes, _ := hex.DecodeString(hexstr)
 	fmt.Println(base64.RawStdEncoding.EncodeToString(bytes))
 }
+
+
+// This Go program takes a hexadecimal string, decodes it into bytes, and then encodes the result into a base64 string (using raw base64 encoding). The output is a base64-encoded string without padding (=).000000#

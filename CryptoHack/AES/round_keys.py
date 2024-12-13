@@ -35,3 +35,5 @@ for c in a:
 
 # crypto{r0undk3y}
 
+
+# This script demonstrates the AES add_round_key operation, which XORs the current state matrix with the round key matrix. It converts the resulting matrix into a 16-byte array using matrix2bytes, and then prints the corresponding ASCII characters of the result. The final output reveals the flag crypto{r0undk3y}.

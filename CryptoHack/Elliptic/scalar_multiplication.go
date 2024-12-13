@@ -129,3 +129,6 @@ func main() {
 	}
 	fmt.Println(Q)
 }
+
+
+// This Go code implements elliptic curve operations over the curve defined by \( y^2 = x^3 + 497x + 1768 \mod 9739 \). It defines a point \( P = (2339, 2213) \) and computes \( Q = 7863 \cdot P \) using point multiplication. The code checks if \( Q \) lies on the curve and prints \( Q \) if it does.

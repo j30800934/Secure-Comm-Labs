@@ -25,3 +25,5 @@ func main() {
 		}
 	}
 }
+
+// This Go program finds the smallest generator of a cyclic group modulo p (in this case, p is 28151). A generator g is a number where the powers of g modulo p generate all nonzero numbers modulo p. The program iterates through potential candidates k starting from 1 and checks if raising k to all powers less than p modulo p yields k itself, indicating that k is not a generator. The first value of k that satisfies the condition is printed as the generator.

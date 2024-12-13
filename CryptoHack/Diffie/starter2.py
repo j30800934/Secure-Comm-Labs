@@ -35,3 +35,6 @@ for i in range(2,p):
         print(i)
         break
 # primitive_element = 7
+
+
+# This script finds the primitive root of a prime number `p` by testing candidate numbers from 2 to \( p-1 \). For each candidate \( i \), it checks if the powers of \( i \) modulo \( p \) (specifically powers \( 2, 5, 10, 25, 50, 2*563, 5*563, 10*563, 25*563, 1, 563 \)) are greater than 1. If all 11 conditions hold true, the number \( i \) is printed as the primitive root of `p`. The script identifies `7` as the primitive root.

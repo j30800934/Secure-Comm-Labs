@@ -30,3 +30,6 @@ for data in ciphertexts:
         flag += xor(bytes.fromhex(previous),bytes.fromhex(data_array[len(data_array)-1]))
         previous=data
 print(flag)
+
+
+# This script decrypts an encrypted flag using the ECB and CBC modes of AES encryption. It retrieves encrypted data from a server, processes it to extract the IV and ciphertext blocks, and then decrypts them block by block. The decryption uses the CBC property that each plaintext block is the XOR of the decrypted ciphertext and the previous ciphertext (or IV for the first block). The final output reconstructs the flag in plaintext.

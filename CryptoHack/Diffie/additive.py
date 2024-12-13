@@ -28,3 +28,6 @@ shared_secret = (pow(g,-1,p)*A*B)%p
 print(decrypt_flag(shared_secret, iv, ciphertext))
 
 # crypto{cycl1c_6r0up_und3r_4dd1710n?}
+
+
+# This script implements Diffie-Hellman key exchange to derive a shared secret and then uses it to decrypt a ciphertext encrypted with AES in CBC mode. The shared secret is computed using the formula shared_secret=(g−1×A×B)mod  pshared_secret=(g−1×A×B)modp, where gg, AA, BB, and pp are given parameters. The decryption process uses SHA-1 to derive a 16-byte key from the shared secret, then decrypts the ciphertext using AES with the derived key and an IV. The script outputs the decrypted plaintext, revealing the flag crypto{cycl1c_6r0up_und3r_4dd1710n?}.
