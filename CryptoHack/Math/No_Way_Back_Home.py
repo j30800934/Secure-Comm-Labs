@@ -19,3 +19,10 @@ cipher = AES.new(key,AES.MODE_ECB)
 print(cipher.decrypt(long_to_bytes(int(c,16))))
 
 # crypto{1nv3rt1bl3_k3y_3xch4ng3_pr0t0c0l}
+
+# This code snippet involves cryptographic operations using RSA-like key exchange with AES encryption. Here's a breakdown of what the code does:
+
+#     Inputs: It takes two large prime numbers p and q, as well as some RSA-like components (vka, vkakb, vkb), and a ciphertext c.
+#     Key Calculation: Using the values of vka, vkb, and vkakb, the code calculates a value v, which is then used to generate a symmetric AES key via SHA-256 hashing.
+#     AES Decryption: The ciphertext c is decrypted using the derived AES key with ECB mode.
+

@@ -19,3 +19,6 @@ for key in friend_keys[::-1]:
     d = number.inverse(key[1], phi)
     c = pow(c, d, N)
 print(number.long_to_bytes(c))
+
+
+# This script demonstrates the decryption process for an RSA-like scheme using a factorized modulus N . It starts by reversing the encryption using modular exponentiation with the private key derived from the public exponent and Euler's totient of N , which is computed from the known prime factors p  and q . The ciphertext c  is successively decrypted using each friend's public exponent, ultimately yielding the decrypted message. The final result is printed as bytes using number.long_to_bytes(c).

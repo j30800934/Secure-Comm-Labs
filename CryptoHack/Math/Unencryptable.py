@@ -9,3 +9,5 @@ q = N//p
 print(long_to_bytes(pow(c,pow(e,-1,(p-1)*(q-1)),N)))
 
 ## crypto{R3m3mb3r!_F1x3d_P0iNts_aR3_s3crE7s_t00}
+
+# This script decrypts an RSA-encrypted message by using the private key, which is derived from the given values of `N`, `e`, `p`, and `c`. It calculates the modular inverse of `e` modulo the totient of `N`, then uses it to decrypt the ciphertext and convert the result to bytes. The output is `crypto{R3m3mb3r!_F1x3d_P0iNts_aR3_s3crE7s_t00}`.

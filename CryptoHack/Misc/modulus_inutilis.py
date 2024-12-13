@@ -35,3 +35,6 @@ if is_exact:
     print(f"Decrypted message: {plaintext.decode()}")
 else:
     print("The root is not exact. Decryption failed.")
+
+
+# The script computes the cube root of the ciphertext using gmpy2.iroot. If the root is exact, it converts the result back into bytes using long_to_bytes and prints the decrypted message. The script checks for exactness of the cube root and handles the decryption accordingly. If the root is not exact, it prints an error message. This method is suitable for simple RSA-like encryption with small exponents and known ciphertext.

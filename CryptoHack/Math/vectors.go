@@ -31,7 +31,7 @@ func (v Vec3) Dot(w Vec3) int {
 }
 
 func (v Vec3) String() string {
-	return fmt.Sprintf(`(%d, %d, %d)`, v[0], v[1], v[2])
+	return fmt.Sprintf((%d, %d, %d), v[0], v[1], v[2])
 }
 
 func main() {
@@ -42,3 +42,6 @@ func main() {
 	r := ((v.Mul(2).Sub(w)).Mul(3)).Sub(u.Mul(2))
 	fmt.Println(r)
 }
+
+
+// This Go script defines a Vec3 type representing a 3-dimensional vector with integer components. It implements methods for scalar multiplication (Mul), vector subtraction (Sub), and dot product (Dot), along with a custom string representation (String). In the main function, it performs a series of operations on vectors: first, it multiplies v by 2, subtracts w, multiplies the result by 3, and finally subtracts twice u. The final result is printed.

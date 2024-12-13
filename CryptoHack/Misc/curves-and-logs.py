@@ -59,3 +59,5 @@ print(S)
 sha1 = hashlib.sha1()
 sha1.update(str(S[0]).encode())
 print(sha1.hexdigest())
+
+# This script performs elliptic curve scalar multiplication using the curve equation y^2 = x^3 + 497x + 1768 \mod 9739. It computes the shared secret S = nB times QA, where QA = (815, 3190) and nB = 1829. The x-coordinate of S is hashed using SHA-1 and printed.

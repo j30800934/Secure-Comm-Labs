@@ -76,3 +76,4 @@ print(long_to_bytes(pow(c,d,N)))
 
 # crypto{bon3h5_4tt4ck_i5_sr0ng3r_th4n_w13n3r5}
 
+# The code uses continued fractions to attack RSA. It calculates convergents from the fraction formed by e and N, and tests these for a valid private key d. If successful, it decrypts the ciphertext c, revealing the flag: crypto{bon3h5_4tt4ck_i5_sr0ng3r_th4n_w13n3r5}.

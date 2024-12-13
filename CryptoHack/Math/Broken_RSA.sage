@@ -25,3 +25,6 @@ for i in ans:
         print(flag)
         
 # crypto{m0dul4r_squ4r3_r00t}
+
+
+# The code is designed to decrypt a ciphertext `ct` using modular arithmetic and a known exponent `e`. It applies polynomial factoring in a ring modulo `n` to solve for roots of a polynomial, which corresponds to possible plaintexts. After finding the roots, it checks each one to see if it contains the substring "crypto". When it finds a root that contains this substring, it prints the result, revealing the flag `crypto{m0dul4r_squ4r3_r00t}`.

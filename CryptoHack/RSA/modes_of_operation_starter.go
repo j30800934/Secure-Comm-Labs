@@ -21,3 +21,7 @@ func main() {
 	fmt.Println(string(pt))
 	resp.Body.Close()
 }
+
+
+
+// This Go program fetches a ciphertext from a remote service, decrypts it, and prints the plaintext. It first sends a GET request to retrieve the ciphertext, then sends another request to decrypt it and outputs the result.

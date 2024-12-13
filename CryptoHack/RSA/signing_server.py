@@ -11,3 +11,5 @@ x = int(eval(r.recvline().decode().strip('\n'))["signature"][2:],16)
 print(long_to_bytes(x))
 
 # crypto{d0n7_516n_ju57_4ny7h1n6}
+
+# This code connects to a remote server and sends a request to fetch a secret message. It receives the secret, then uses that secret as a message to sign, sending it back to the server. The server returns a signature, which the code converts from hexadecimal and prints the corresponding bytes. The message retrieved is "crypto{d0n7_516n_ju57_4ny7h1n6}".

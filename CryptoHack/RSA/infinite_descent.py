@@ -24,3 +24,5 @@ p,q = fermat(n)
 print(long_to_bytes(pow(c,pow(e,-1,(p-1)*(q-1)),n)))
 
 # crypto{f3rm47_w45_4_g3n1u5}
+
+# The script implements Fermat's factorization method to find the prime factors of n, then uses RSA decryption with the private key computed from those factors. The result of the decryption is printed as a message, yielding the flag crypto{f3rm47_w45_4_g3n1u5}.

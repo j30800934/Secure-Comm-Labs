@@ -24,3 +24,6 @@ print(data)
 # print(enc_token)
 
 ## crypto{The_Cryptographic_Doom_Principle}
+
+
+# The code creates a JWT with the none algorithm and attempts to authorize using it. It highlights the insecurity of using the none algorithm in JWTs. The output flag is crypto{The_Cryptographic_Doom_Principle}.

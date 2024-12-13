@@ -59,3 +59,6 @@ print(S)
 sha1 = hashlib.sha1()
 sha1.update(str(S[0]).encode())
 print(sha1.hexdigest())
+
+
+# This script implements elliptic curve scalar multiplication. It defines functions for modular inversion and point addition on the curve y^2 = x^3 + 497x + 1768  9739 . Given a point QA  and a secret integer nB , it calculates S = nB times QA  and hashes the x-coordinate of S  using SHA-1. The resulting hash is then printed.

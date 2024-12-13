@@ -12,3 +12,5 @@ with gmpy2.local_context(gmpy2.context(), precision=800) as ctx:
 print(bytes.fromhex(str('%x' % + int(root))).decode('utf-8'))
 
 # crypto{N33d_m04R_p4dd1ng}
+
+# This script calculates the cube root of a ciphertext and attempts to decode the result as a plaintext string. It uses the `gmpy2` library to compute the cube root and then converts the result to hexadecimal before interpreting it as a UTF-8 string.

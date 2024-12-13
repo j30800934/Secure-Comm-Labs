@@ -22,3 +22,6 @@ while True:
             found = True
     if found:
         break
+
+
+# This script attempts to factorize N by exploiting the relationship between d and e. It calculates k = d * e - 1 and randomly selects a g. For each g, it computes powers of g mod N and checks if the GCD of g^t - 1 and N is greater than 1, revealing factors of N if found. The process is based on Pollard's p-1 method.

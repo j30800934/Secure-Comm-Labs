@@ -26,8 +26,8 @@ phi = (q - 1) * (p - 1)
 
 # reverse encryption process
 for key in friend_keys[::-1]:
-    d = inverse(key[1], phi)  # Correct usage of `inverse`
+    d = inverse(key[1], phi)  # Correct usage of inverse
     c = pow(c, d, N)
-print(long_to_bytes(c))  # Correct usage of `long_to_bytes`
+print(long_to_bytes(c))  # Correct usage of long_to_bytes
 
-
+# The provided script is performing a decryption process. It involves working with RSA encryption and decrypting a ciphertext c using the private keys associated with a list of friend keys. The script includes several steps such as calculating the Euler's totient function (phi) using two large prime numbers p and q, and using the inverse function from Crypto.Util.number to find the modular inverse of the private exponent d. The ciphertext c is then decrypted by raising it to the power of d modulo N. Finally, the script converts the result from a long integer back to bytes using long_to_bytes. This script seems to be decrypting a message that was encrypted with RSA, using the provided key pairs.

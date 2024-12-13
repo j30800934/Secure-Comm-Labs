@@ -19,7 +19,7 @@ a = pow(g, r, p)
 
 assert pow(g, w, p) == y % p
 
-io.recvuntil(b'Prove to me that you know an w such that g^w = y mod p. Send me a = g^r mod p for some random r in range(q)\n')
+io.recvuntil(b'Prove to me that you know an w such that g^w = y mod p. Send me a = g^r mod p for some random r in range(q)n')
 
 import json 
 challenge = {
@@ -42,3 +42,5 @@ io.sendline(payload)
 io.interactive()
 
 ## crypto{sigma_protocol_complete!}
+
+# The code implements a Sigma protocol to prove knowledge of a secret w such that  g^w equiv y mod p . It starts by choosing a random r and calculating  a = g^r mod p , which is sent as part of the proof. The server challenges with a value e, and the participant calculates  z = (r + e  w) mod q  as the response, which is then sent to the server. The protocol completes successfully, confirming the participant's knowledge of w without revealing it, resulting in the flag "crypto{sigma_protocol_complete!}".

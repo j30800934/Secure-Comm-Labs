@@ -10,3 +10,6 @@ func main() {
 	N, _ := new(big.Int).SetString(Nstr, 10)
 	fmt.Println(string(N.Bytes()))
 }
+
+
+// This script converts a large number, represented as a string, into a big integer using the math/big package. It then converts the integer to its byte representation and prints the corresponding string.

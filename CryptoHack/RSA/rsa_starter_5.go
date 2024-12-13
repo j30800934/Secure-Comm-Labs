@@ -20,3 +20,6 @@ func main() {
 	c, _ := new(big.Int).SetString("77578995801157823671636298847186723593814843845525223303932", 10)
 	fmt.Println(c.Exp(c, d, N))
 }
+
+
+// The Go code calculates the plaintext from the given ciphertext in an RSA encryption system. It first computes  N = p x q  and  varphi(N) = (p-1) times (q-1) . The modular inverse of  e = 65537  is found to derive the private key  d . Then, it decrypts the ciphertext  c  by computing  c^d mod N , which gives the plaintext.

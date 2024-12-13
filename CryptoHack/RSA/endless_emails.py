@@ -72,3 +72,9 @@ for grp in combinations(zip(n, c), 3):
 
 ## crypto{1f_y0u_d0nt_p4d_y0u_4r3_Vuln3rabl3}
 
+# The script implements a solution to a cryptographic challenge that uses the Chinese Remainder Theorem (CRT) to solve for a message encrypted with RSA across multiple moduli. The ciphertexts (c1 to c7) are encrypted using different moduli (n1 to n7), and the common public exponent e is 3.
+
+# The key idea in this script is to use combinations of three different ciphertexts and their corresponding moduli. The moduli are multiplied together to form a common modulus N , and the message is reconstructed by using the Chinese Remainder Theorem, leveraging the inverses of the moduli in the CRT calculation. After obtaining the result, the script computes the cubic root of the resultant value to extract the plaintext, using the gmpy2.iroot function.
+
+# If the cubic root is exact, the resulting value is converted to bytes and printed. The final output is the decrypted message: crypto{1f_y0u_d0nt_p4d_y0u_4r3_Vuln3rabl3}.
+

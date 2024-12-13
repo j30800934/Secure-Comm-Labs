@@ -11,7 +11,7 @@ p = 0x1ed344181da88cae8dc37a08feae447ba3da7f788d271953299e5f093df7aaca987c9f653e
 q = 0xf69a20c0ed4465746e1bd047f57223dd1ed3fbc46938ca994cf2f849efbd5654c3e4fb29f6bf21dd6abb662e911487b0f9934039b5f20a23217c5f537adfaaf7
 g = 2
 
-r.recvuntil(b'Send me a transcript for my given `e` proving that you know the flag `w` such that y = g^w mod p\n')
+r.recvuntil(b'Send me a transcript for my given e proving that you know the flag w such that y = g^w mod p\n')
 
 response = json.loads(r.recvline().strip().decode())
 e = response["e"]
@@ -30,3 +30,6 @@ r.sendline(payload)
 r.interactive()
 
 ## crypto{so_honest_very_zero_knowledge}
+
+# The code interacts with a remote service. It uses the provided values p, q, g, and e to calculate a solution for the challenge. First, it receives a challenge with the values e and y from the server. It then computes a as the modular inverse of y^e mod p, and sets z to 0 (likely representing a zero-knowledge proof component). The solution is sent back to the server in JSON format, which is accepted and confirms the knowledge of the flag.
+

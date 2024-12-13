@@ -29,3 +29,5 @@ enc_flag = long_to_bytes(int(param["encrypted_flag"],16))
 print(long_to_bytes(int(encrypt(enc_flag,x),16)))
 
 
+# This script uses a time-based key generation approach for encryption, where the key is derived from the current timestamp and hashed with SHA-256. It encrypts the given data by XORing each byte of the input with the corresponding byte from the key. It connects to a remote server using the pwn library, retrieves an encrypted flag, and attempts to decrypt it using the generated key. However, there's a small bug in the encrypt() function: the ciphertext is being converted to hex but not returned correctly. Additionally, the flag decryption might not work as expected due to potential issues with timing or key generation.
+

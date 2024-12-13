@@ -31,3 +31,4 @@ print(long_to_bytes(pow(enc,pow(product,-1,phi),N)))
 # crypto{3ncrypt_y0ur_s3cr3t_w1th_y0ur_fr1end5_publ1c_k3y}
 
 
+# This script implements the Franklin-Reiter related-message attack on a cryptographic challenge. It connects to a remote server to retrieve two encrypted messages with different padding values and the modulus n. Using these, it applies a polynomial-based GCD calculation to recover the plaintext message. The compositeModulusGCD function computes the GCD of two polynomial expressions, and the FranklinReiter function uses this to extract the original message, which is then printed in bytes form. The solution reveals the flag crypto{linear_padding_isnt_padding}.

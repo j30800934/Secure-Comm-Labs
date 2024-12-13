@@ -52,3 +52,6 @@ def decrypt_flag(shared_secret: int, iv: str, ciphertext: str):
     return pkcs7_unpad(plaintext).decode('ascii')
 
 print(decrypt_flag(0,iv,enc))
+
+
+# This script uses Diffie-Hellman to exchange keys and AES to decrypt an encrypted flag. The shared secret should be derived from the Diffie-Hellman process, but it's currently set to 0, which is incorrect. The decryption uses AES in CBC mode with the derived key. Fixing the shared secret calculation is necessary for correct decryption.

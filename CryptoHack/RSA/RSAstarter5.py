@@ -7,3 +7,5 @@ c = 77578995801157823671636298847186723593814843845525223303932
 d = 121832886702415731577073962957377780195510499965398469843281
 
 print(pow(c,d,N))
+
+# This code decrypts the ciphertext  c  using the RSA private key exponent  d  and modulus  N . It computes  c^d mod N , which gives the original plaintext message.

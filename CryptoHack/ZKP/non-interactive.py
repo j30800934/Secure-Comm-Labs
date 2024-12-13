@@ -15,7 +15,7 @@ g = 2
 w = 0xdb968f9220c879b58b71c0b70d54ef73d31b1627868921dfc25f68b0b9495628b5a0ea35a80d6fd4f2f0e452116e125dc5e44508b1aaec89891dddf9a677ddc0
 y = 0x1a1b551084ac43cc3ae2de2f89c6598a081f220010180e07eb62d0dee9c7502c1401d903018d9d7b06bff2d395c46795aa7cd8765df5ebe7414b072c8289170f0
 
-io.recvuntil(b'Send me a nizk showing that you know `w` such that y = g^w mod p\n')
+io.recvuntil(b'Send me a nizk showing that you know w such that y = g^w mod pn')
 io.recvline()
 
 assert pow(g, w, p) == y % p 
@@ -34,3 +34,5 @@ io.sendline(payload)
 io.interactive()
 
 ## crypto{shvzk_and_ss_to_nizk}
+
+# This code solves a cryptographic challenge by generating a zero-knowledge proof (NIZK) that demonstrates knowledge of the secret value w without revealing it. First, it checks that  g^w mod p = y . Then, it computes e by hashing the number 1 and reducing it modulo  2^{511} . Using e and w, it calculates z as  (e times w) mod q . It then constructs a JSON payload containing the value z and sends it as part of the response. The flag is "crypto{shvzk_and_ss_to_nizk}".

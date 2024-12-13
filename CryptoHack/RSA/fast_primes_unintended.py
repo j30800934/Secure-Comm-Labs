@@ -17,3 +17,5 @@ c1 = bytes.fromhex(c)
 print(cipher.decrypt(c1))
 
 ## crypto{p00R_3570n14}
+
+# The script constructs an RSA key using given values for n, p, q, and e, calculates the private key d, and decrypts the ciphertext c. The output reveals the flag: crypto{p00R_3570n14}.

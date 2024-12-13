@@ -3,3 +3,5 @@ for i in characters:
     print(chr(i),end="")
 
 # crypto{ASCII_pr1nt4bl3}
+
+# This script takes a list of ASCII values, converts each value to its corresponding character using chr(), and prints the characters in a single line to form the string crypto{ASCII_pr1nt4bl3}.

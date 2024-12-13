@@ -40,3 +40,6 @@ def bruteforce():
     print(flag)
 
 bruteforce()
+
+
+# This script brute-forces the flag by exploiting ECB encryption, where identical plaintext blocks result in identical ciphertext blocks. It sends a payload of '1' characters, compares the ciphertext, and gradually builds the flag by matching the blocks. The process continues until the entire flag is reconstructed, ending when it detects a } character. The encrypt() function queries a remote server for ciphertext, and print_blk() formats the output in 32-byte blocks for comparison.

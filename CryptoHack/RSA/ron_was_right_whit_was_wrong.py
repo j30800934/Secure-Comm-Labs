@@ -25,3 +25,5 @@ for i in range(len(pub_key)):
             print(cipher.decrypt(long_to_bytes(c)))
             
 # crypto{3ucl1d_w0uld_b3_pr0ud}
+
+# The script reads multiple RSA public keys and their corresponding ciphertexts, then checks for common factors between the public keys (n). When a common factor (i.e., a shared prime) is found, it calculates the prime factors (p and q) and the totient (phi). Using this, it computes the private exponent d and decrypts the ciphertext using the RSA private key. The decrypted message is crypto{3ucl1d_w0uld_b3_pr0ud}.

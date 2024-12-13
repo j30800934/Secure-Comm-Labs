@@ -49,3 +49,4 @@ print(n//(M**2))
 k1 = 4313467*22
 k2 = 17467*87251
 
+# The script calculates the first 40 primes using the Sieve of Sundaram, then computes the primorial (the product of these primes) and prints it. The script also prints the result of n // (M**2) where M is the primorial, and defines two constants k1 and k2. The output of this code would include the first 40 primes, the value of M, and the result of the division n // (M**2).

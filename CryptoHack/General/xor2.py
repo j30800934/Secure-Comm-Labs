@@ -7,3 +7,4 @@ flag = FKEY123^KEY1^KEY23
 print(long_to_bytes(flag))
 
 # crypto{x0r_i5_ass0c1at1v3}
+# This script performs a bitwise XOR operation on three given keys (`KEY1`, `KEY23`, and `FKEY123`) and computes the flag. The hexadecimal values of `KEY1`, `KEY12`, `KEY23`, and `FKEY123` are first converted to long integers using `bytes_to_long()`. Then, it calculates `flag` by applying the XOR operation: `FKEY123 ^ KEY1 ^ KEY23`. Finally, it converts the resulting value back into bytes and prints the flag, which is `crypto{x0r_i5_ass0c1at1v3}`.

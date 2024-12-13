@@ -41,3 +41,6 @@ func main() {
 		}
 	}
 }
+
+
+// This Go script interacts with a remote server to retrieve a ciphertext encrypted using AES with a password derived from a dictionary of words. The script loads a list of words from a file, hashes each word using MD5 to generate a potential AES key, and then attempts to decrypt the ciphertext. If the decrypted plaintext starts with the string "crypto", it prints the result.

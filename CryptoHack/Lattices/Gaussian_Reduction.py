@@ -28,3 +28,5 @@ x,y = Lattice_Reduction(u,v)
 print(dot_product(x,y,len(x)))
 
 ## 7410790865146821
+
+# This script implements a lattice reduction algorithm and calculates the dot product of two vectors, `x` and `y`, after reducing them. The function `dot_product` computes the sum of element-wise products of two lists. The `Lattice_Reduction` function modifies the vectors `u` and `v` by reducing them through a series of steps, including swapping and updating the vectors based on their dot products. The final step prints the dot product of the reduced vectors `x` and `y`, which results in `7410790865146821`.

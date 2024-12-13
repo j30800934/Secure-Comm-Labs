@@ -15,3 +15,5 @@ for i in range(852,1000):
         continue
 
 # crypto{919,209}
+
+# This script checks for primes between 852 and 1000 and calculates a modular inverse operation using values from the flag list. It verifies if a certain condition holds for each prime and prints the prime and corresponding result if the condition is met. The output is crypto{919,209}.

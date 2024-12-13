@@ -15,3 +15,6 @@ func main() {
 	toient := new(big.Int).Mul(p, q)
 	fmt.Println(e.ModInverse(e, toient))
 }
+
+
+// This Go script code calculates the modular inverse of e = 65537  modulo varphi(n) , where varphi(n) = (p-1) x (q-1) , and prints the result. The value d  is the modular inverse of e  modulo varphi(n) , used as the private key in RSA.

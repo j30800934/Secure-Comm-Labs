@@ -40,3 +40,6 @@ def decrypt(grps, e):
 # [Hastad’s Broadcast Attack](https://bitsdeep.com/posts/attacking-rsa-for-fun-and-ctf-points-part-2/)
 grps = load_output()
 decrypt(grps, 3)
+
+
+# This script implements Håstad's Broadcast Attack to break RSA encryption when the same message is broadcasted using different moduli and exponents. It loads RSA public keys and ciphertexts from a file and performs decryption using the Chinese Remainder Theorem (CRT) and integer root extraction. The script computes the product of the moduli (N) and the combined ciphertext (M) using the CRT. It then attempts to find the cubic root of M using gmpy2.iroot, and if the root is exact, it converts the result back to a plaintext message using long_to_bytes.

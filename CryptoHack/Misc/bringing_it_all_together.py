@@ -169,3 +169,5 @@ def decrypt(key, ciphertext):
     return matrix2bytes(ciphertext)
 
 print("".join([chr(k) for k in decrypt(key, ciphertext)]))
+
+# This script outlines an AES decryption implementation with necessary functions for key expansion, state manipulation, and the core decryption process. The expand_key function generates round keys from the master key by applying transformations like circular shifts and S-box mappings, along with XORing round constants. The decryption process involves reversing AES operations such as substitution, shifting rows, and mixing columns through their inverse counterparts. The ciphertext is iteratively transformed using these operations, working backwards through the round keys. Finally, the state matrix is converted back to plaintext after applying the last round's transformations.

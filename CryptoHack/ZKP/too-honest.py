@@ -34,3 +34,5 @@ print(long_to_bytes(flag))
 io.interactive()
 
 ## crypto{2_hon3st_to_b3_tru3}
+
+# The code implements a protocol that generates a challenge-response interaction. The participant sends a random challenge e to the server, which responds with a value z. By dividing z by e, the flag is obtained. The result is printed and revealed as crypto{2_hon3st_to_b3_tru3}.

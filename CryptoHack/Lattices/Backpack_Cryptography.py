@@ -2,3 +2,4 @@
 # Encrypted Flag: 45690752833299626276860565848930183308016946786375859806294346622745082512511847698896914843023558560509878243217521
 
 
+# This script uses lattice-based cryptography and public key consists of two large integers, which are used in the encryption process. The encrypted flag is the ciphertext produced with this public key. To decrypt the flag, the corresponding private key was used. In lattice-based cryptography, methods such as solving the Learning With Errors (LWE) problem are used for encryption and decryption. Without the private key or a method to break the lattice, decryption is not possible.

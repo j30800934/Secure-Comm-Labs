@@ -14,5 +14,8 @@ func main() {
 	hash := sha256.Sum256([]byte(M))
 	H := new(big.Int).SetBytes(hash[:])
 
-	fmt.Printf("%x\n", H.Exp(H, d, N))
+	fmt.Printf("%xn", H.Exp(H, d, N))
 }
+
+
+// The Go code hashes the message "crypto{Immut4ble_m3ssag1ng}" using SHA-256, then decrypts the hash with RSA decryption using the private key  d and modulus  N. It calculates  H^d mod N to obtain the decrypted value, which is the plaintext corresponding to the original message's hash. The result is printed in hexadecimal format.

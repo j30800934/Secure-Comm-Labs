@@ -154,3 +154,6 @@ d = attack(e, n)
 print(long_to_bytes(pow(c,d,n)))
 
 # crypto{s0m3th1ng5_c4n_b3_t00_b1g}
+
+
+# The code you've provided is implementing an attack on RSA encryption to recover the private key and decrypt the ciphertext. The attack function uses continued fractions and convergents to find a potential solution to the problem based on the given public exponent e and modulus n. After running the attack, the private key d is used to decrypt the ciphertext c by performing modular exponentiation. The final result is then converted to bytes and printed.

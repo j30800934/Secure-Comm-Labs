@@ -9,3 +9,4 @@ for i in range(256):
         print(ans)
 
 # crypto{0x10_15_my_f4v0ur173_by7e}
+# This script attempts to decrypt a hexadecimal-encoded string by applying a bitwise XOR operation with each possible byte value (ranging from 0 to 255). It uses the `xor` function from the `pwn` library to perform the XOR operation. After each XOR, the script checks if the resulting byte string contains the substring `b'crypto'`. Once it finds a match, it prints the decrypted result, which is `crypto{0x10_15_my_f4v0ur173_by7e}`.

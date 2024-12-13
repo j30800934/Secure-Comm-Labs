@@ -36,3 +36,5 @@ a = (f*e)%q
 print(long_to_bytes((a*pow(f,-1,g))%g))
 
 ## crypto{Gauss_lattice_attack!}
+
+# This script performs a lattice-based attack using a technique called Lattice Reduction. It defines a dot product function and a lattice reduction algorithm to manipulate vectors. The vectors `u` and `v` represent certain values derived from the public key components `h` and `q`. The lattice reduction process reduces the vectors until a particular relation is found. The value `f` and `g` are extracted from the reduced lattice, and a modular arithmetic calculation is performed to compute the flag. The result is then printed as a byte string, which is converted to the flag `crypto{Gauss_lattice_attack!}`.

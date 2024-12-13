@@ -1,1 +1,0 @@
-alert("CTF{I-LOVE-MALVERTISING-wkJsuw}")

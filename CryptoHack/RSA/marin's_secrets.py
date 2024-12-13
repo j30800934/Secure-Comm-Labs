@@ -14,3 +14,6 @@ for i in range(4484):
             exit(-1)
 
 # crypto{Th3se_Pr1m3s_4r3_t00_r4r3}
+
+
+# The script attempts to factorize n into two prime numbers of the form (1 << i) - 1 and (1 << j) - 1. Once the correct primes p and q are found, it computes the RSA private key exponent d and decrypts the ciphertext c using the formula c^d % n. The decrypted message is then printed in the form of bytes.

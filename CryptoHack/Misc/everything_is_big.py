@@ -16,3 +16,8 @@ phi = (q-1)*(p-1)
 # https://sagi.io/2016/04/crypto-classics-wieners-rsa-attack/
 d = inverse(e, phi)
 print(long_to_bytes(pow(c, d, N)))
+
+
+
+# This script decrypts a ciphertext c encrypted using RSA with a given modulus N, public exponent e, and private key d, which is computed using the modular inverse of e with respect to the totient phi of N. The totient phi is derived from the two prime factors p and q of N. The ciphertext c is decrypted by raising it to the power of d modulo N, and the result is converted to bytes using long_to_bytes. 
+

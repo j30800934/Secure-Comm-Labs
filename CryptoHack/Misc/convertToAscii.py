@@ -104,3 +104,5 @@ def xor_string_with_13(label):
 label = "label" 
 flag = xor_string_with_13(label)
 print(flag)
+
+# The script includes functions for various conversions and operations. The `convertB64` function converts a hex string to bytes, encodes the bytes in base64, and returns the result as a UTF-8 string. The `convertAscii` function takes a list of numbers representing ASCII values, converts them to corresponding characters, and returns a list of characters. The `convertToOrd` function converts a string into a list of ordinal values, which are the numerical representations of each character in the string. The `convertToMsg` function reconstructs a message from a large integer by converting it to bytes and then decoding it into a string. The `xor_string_with_13` function XORs each character in a string with the value 13 and returns the result in a formatted string.

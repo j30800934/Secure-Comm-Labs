@@ -22,3 +22,5 @@ def subtraction(a,b,n):
 print(dot_product(scalar_multiplication(3,subtraction(scalar_multiplication(2,v,3),w,3),3),scalar_multiplication(2,u,3),3))
 
 # 702
+
+# This script calculates the value of 3 times the dot product of 2 times the vector v minus the vector w with 2 times the vector u. First, it multiplies v by 2, then subtracts w from the result. This difference is then multiplied by 3. Afterward, it multiplies u by 2. Finally, the dot product of the two results is computed. The output is 702.

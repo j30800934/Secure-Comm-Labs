@@ -23,3 +23,5 @@ def decrypt_flag(shared_secret: int, iv: str, ciphertext: str):
 print(decrypt_flag(s,iv,enc))
 
 ## crypto{c0n1c_s3ct10n5_4r3_f1n1t3_gr0up5}
+
+# The code provided demonstrates how to decrypt an AES-encrypted flag using a shared secret. It uses SHA-1 to generate a 16-byte key from the shared secret and decrypts the flag with AES in CBC mode. The result is the flag crypto{c0n1c_s3ct10n5_4r3_f1n1t3_gr0up5}.

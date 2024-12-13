@@ -5,3 +5,5 @@ ct = 449812307182121836042747859257931454426554650252645540460282513111644941274
 print(long_to_bytes(ct))
 
 # crypto{saltstack_fell_for_this!}
+
+# This script takes the ciphertext ct and directly converts it to a byte string using long_to_bytes(). The modulus n and the exponent e are provided but not needed because e = 1, making the encryption trivial (effectively the ciphertext is the message itself). The result is the message "crypto{saltstack_fell_for_this!}".

@@ -10,3 +10,4 @@ key = b"myXORkey"
 print(xor(s,key))
 
 # b'crypto{1f_y0u_Kn0w_En0uGH_y0u_Kn0w_1t_4ll}'
+# This script demonstrates the use of the `xor` function from the `pwn` library to perform XOR operations with byte strings. First, it takes a slice of the input string `s` (the first 7 bytes) and XORs it with the string `b"crypto{"`. This results in the key `b"myXORke"`. Then, it XORs the entire string `s` with the key `b"myXORkey"`, revealing the message `b'crypto{1f_y0u_Kn0w_En0uGH_y0u_Kn0w_1t_4ll}'`.

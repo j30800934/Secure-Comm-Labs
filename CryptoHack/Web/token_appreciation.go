@@ -15,3 +15,5 @@ func main() {
 	json.Unmarshal(body, &res)
 	fmt.Println(res["flag"])
 }
+
+// This script decodes the JWT, extracts the payload (the second part of the token), and then prints the value of the "flag" field from the decoded JSON object.

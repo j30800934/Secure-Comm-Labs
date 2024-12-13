@@ -44,3 +44,5 @@ for i in primes:
 print(long_to_bytes(pow(ct,pow(e,-1,phi_n),n)))
 
 # crypto{700_m4ny_5m4ll_f4c70r5}
+
+# The script decrypts the RSA ciphertext by calculating the modular inverse of the public exponent e modulo the totient of n, which is computed as the product of (p-1) for each prime factor p of n. The decrypted plaintext is crypto{700_m4ny_5m4ll_f4c70r5}.

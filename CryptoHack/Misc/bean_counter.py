@@ -53,3 +53,5 @@ with open('bean_counter.png', 'wb') as fd:
     fd.write(bytes(png))
 
 print("Decrypted image written to 'bean_counter.png'")
+
+# This Python script decrypts an image that has been encrypted using XOR with a keystream. The script first fetches the encrypted data from a server using a GET request. It then XORs the encrypted data with the PNG header bytes to generate the keystream. The encrypted data is subsequently decrypted by XORing it with the keystream, and the result is written to a PNG file named `bean_counter.png`. The script ends with a confirmation message indicating the successful decryption and writing of the image.

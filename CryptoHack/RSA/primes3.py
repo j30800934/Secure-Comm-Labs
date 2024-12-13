@@ -5,3 +5,7 @@ ct = 161367550346730604451454756189028938964941280347662098798775466019463375610
 print(long_to_bytes(pow(ct,pow(e,-1,n-1),n)))
 
 # crypto{0n3_pr1m3_41n7_pr1m3_l0l}
+
+# The code decrypts an RSA ciphertext using the modular inverse of the public exponent e modulo n-1 (where n is the RSA modulus). The decryption is done using the formula pt = ct^d mod n, where d is the private exponent, which is calculated as the modular inverse of e modulo n-1.
+
+# The decryption successfully reveals the plaintext flag crypto{0n3_pr1m3_41n7_pr1m3_l0l}.

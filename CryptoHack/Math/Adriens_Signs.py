@@ -17,3 +17,5 @@ for i in cipher:
 print(''.join(chr(int(i,2)) for i in flag))
 
 # crypto{p4tterns_1n_re5idu3s}
+
+# This script determines the binary representation of a flag based on a list of ciphertext values and a given modulus. It checks whether each ciphertext element is a quadratic residue modulo a prime `p` by using the Legendre symbol, which is computed with `pow(i, (p-1)//2, p)`. If the result is 1, the ciphertext is a quadratic residue, and a '1' is added to the string; otherwise, a '0' is added. After processing each ciphertext value, the binary string is converted to characters in 8-bit chunks to reconstruct the flag. The final flag is "crypto{p4tterns_1n_re5idu3s}".

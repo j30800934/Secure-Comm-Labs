@@ -3,3 +3,6 @@ encoded = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmbGFnIjoiY3J5cHRve2p3dF9jb250
 print(jwt.decode(encoded, options={"verify_signature":False}))
 
 ## crypto{jwt_contents_can_be_easily_viewed}
+
+
+# This script decodes the JWT and prints its payload without verifying the signature. This allows you to view the contents of the token directly.

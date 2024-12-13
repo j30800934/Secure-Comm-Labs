@@ -197,3 +197,7 @@ decrypted_flag = xor_decrypt(hex_string, full_key)
 # Output the results
 print(f"Derived Key: {full_key}")
 print(f"Decrypted Flag: {decrypted_flag}")
+
+
+
+# The code performs AES decryption with a key expansion and XOR decryption with a known prefix. The AES part decrypts a ciphertext using a key schedule and operations like SubBytes, ShiftRows, and MixColumns. The XOR part derives a key from a known prefix and uses it to decrypt a hexadecimal string by XORing each byte with the key. The result is the decrypted flag.
